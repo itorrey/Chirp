@@ -1,10 +1,11 @@
-<div class="self %messageClasses%">
+<div class="self chat %messageClasses%">
     <div class="avatar">
         <img src="%userIconPath%" alt="You">
     </div>
     <div class="messages">
+		<span class="sender">%sender% </span>
+		<span class="time">%time% </span>
         <p>%message%</p>
         <div id="insert"></div>
-        <time class="in-last-hour" datetime="%time{EEE MMM dd yyyy HH:mm:ss zzz}%"><span>Now</span></time>
     </div>
 </div>

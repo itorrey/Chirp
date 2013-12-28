@@ -1,0 +1,43 @@
+$avatarSize = 60px;
+
+html {
+	padding:0;
+	margin:0;
+}
+
+body {
+	font-family:"Helvetica Neue", "Helvetica", sans-serif;
+	padding:0;
+	margin:0;
+}
+.chat {
+	position:relative;
+	border-bottom:1px solid #F1F2F4;
+	padding:5px;
+	.avatar {
+		display:inline-block;
+		position:absolute;
+		left:10px;
+		top:5px;
+		img {
+			width:$avatarSize;
+			height:$avatarSize;
+			-webkit-border-radius: $avatarSize;
+		}
+	}
+	
+	.messages {
+		margin-left:80px;
+		border:1px solid blue;
+	}
+	
+	.sender{
+		font-weight:bold;
+	}
+	
+	.time {
+		position:absolute;
+		right:0;
+		font-size:11px;
+	}
+}

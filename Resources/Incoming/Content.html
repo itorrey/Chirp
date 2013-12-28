@@ -1,11 +1,11 @@
-<div class="other %messageClasses%">
+<div class="incoming chat %messageClasses%">
     <div class="avatar">
-        <img src="http://www.gravatar.com/avatar/%senderColor%?r=PG&amp;s=80&amp;default=identicon" class="generic-avatar" alt="%sender%">
-        <img src="%userIconPath%" class="sender-avatar not-processed" alt="%sender%">
+        <img src="%userIconPath%" class="sender-avatar" alt="%sender%">
     </div>
     <div class="messages">
+		<span class="sender">%sender% </span>
+		<span class="time">%time% </span>
         <p>%message%</p>
         <div id="insert"></div>
-        <time class="in-last-hour" datetime="%time{EEE MMM dd yyyy HH:mm:ss zzz}%">%sender% • <span>Now</span></time>
     </div>
 </div>
