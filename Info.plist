@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <dict>
+        <key>CFBundleName</key>
+        <string>Chirp</string>
+
+        <key>CFBundleIdentifier</key>
+        <string>itorrey.Chirp.style</string>
+
+        <key>CFBundleGetInfoString</key>
+        <string>Chirp</string>
+
+        <key>DefaultFontFamily</key>
+        <string>Helvetica Neue</string>
+
+        <key>DefaultFontSize</key>
+        <integer>13</integer>
+
+        <key>CFBundleDevelopmentRegion</key>
+        <string>English</string>
+
+        <key>CFBundleVersion</key>
+        <string>0.1</string>
+
+        <key>CFBundleShortVersionString</key>
+        <string>0.1</string>
+
+        <key>DisableCombineConsecutive</key>
+        <false/>
+
+        <key>DisableCustomBackground</key>
+        <false/>
+
+        <key>DefaultBackgroundColor</key>
+        <string>FFFFFF</string>
+
+        <key>DefaultBackgroundIsTransparent</key>
+        <false/>
+
+        <key>MessageViewVersion</key>
+        <integer>1</integer>
+
+        <key>ShowsUserIcons</key>
+        <true/>
+
+        <key>AllowTextColors</key>
+        <true/>
+    </dict>
+</plist>
