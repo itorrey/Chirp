@@ -1,37 +1,92 @@
 html {
   padding: 0;
   margin: 0;
+  font-size: 14px;
 }
 body {
   font-family: "Helvetica Neue", "Helvetica", sans-serif;
   padding: 0;
   margin: 0;
+  padding-top: 30px;
+}
+a:link {
+  color: #4583fa;
+}
+a:hover {
+  color: #588ffb;
+}
+a:visited {
+  color: #075af8;
 }
 .chat {
   position: relative;
   border-bottom: 1px solid #f1f2f4;
-  padding: 5px;
+  padding: 15px 0;
 }
 .chat .avatar {
   display: inline-block;
   position: absolute;
   left: 10px;
-  top: 5px;
+  top: 18px;
 }
 .chat .avatar img {
-  width: 60px;
-  height: 60px;
-  -webkit-border-radius: 60px;
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 40px;
 }
 .chat .messages {
-  margin-left: 80px;
-  border: 1px solid #00f;
+  margin-left: 60px;
+}
+.chat .messages p {
+  padding: 0.25em;
+  padding-left: 0;
+  margin: 0;
+  line-height: 135%;
+  color: #4f5562;
 }
 .chat .sender {
   font-weight: bold;
+  color: #3e444b;
 }
 .chat .time {
   position: absolute;
-  right: 0;
-  font-size: 11px;
+  right: 8px;
+  font-size: 0.8em;
+  color: #6289be;
+}
+.heading,
+.topic {
+  color: #3e444b;
+  padding: 0.5em;
+  border-bottom: 2px solid #e3e5e9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: rgba(255,255,255,0.98);
+  z-index: 2;
+  box-shadow: 1px 1px 8px #eef2fb;
+}
+.heading h1,
+.topic h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.4em;
+  margin: 0;
+  padding: 0;
+}
+.heading h2,
+.topic h2 {
+  text-align: left;
+  font-weight: normal;
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0.2em;
+}
+.status {
+  text-align: center;
+  color: #606974;
+  padding: 0.6em;
+  border-bottom: 1px solid #fff;
+  font-size: 0.85em;
+  background: #f1f2f4;
 }
