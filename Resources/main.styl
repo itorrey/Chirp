@@ -2,6 +2,7 @@ $avatarSize = 40px;
 $defaultTextColor = #3E444B;
 $borderColor = #F1F2F4;
 $linkColor = #4583FA;
+$highlightColor = #EFF4FB;
 
 html {
 	padding:0;
@@ -14,66 +15,22 @@ body {
 	padding:0;
 	margin:0;
 	padding-top:30px;
-}
-
-a {
-	&:link {
-		color:$linkColor;
-	}
 	
-	&:hover {
-		color:lighten($linkColor, 10%);
-	}
-	
-	&:visited {
-		color:darken($linkColor, 20%);
-	}
-}
-
-.chat {
-	position:relative;
-	border-bottom:1px solid $borderColor;
-	padding:15px 0;
-	padding-right:15px;
-
-	.avatar {
-		display:inline-block;
-		position:absolute;
-		left:10px;
-		top:18px;
-		
-		img {
-			width:$avatarSize;
-			height:$avatarSize;
-			-webkit-border-radius: $avatarSize;
+	a {
+		&:link {
+			color:$linkColor;
 		}
-		
-	}
 	
-	.messages {
-		margin-left:60px;
-		
-		p {
-			padding:0.25em;
-			padding-left:0;
-			margin:0;
-			line-height:135%;
-			color:#4F5562;
+		&:hover {
+			color:lighten($linkColor, 10%);
+		}
+	
+		&:visited {
+			color:darken($linkColor, 20%);
 		}
 	}
-	
-	.sender{
-		font-weight:bold;
-		color:$defaultTextColor;
-	}
-	
-	.time {
-		position:absolute;
-		right:15px;
-		font-size:0.8em;
-		color:#6289BE;
-	}
 }
+
 .heading, .topic {
 	color:$defaultTextColor;
 	padding:0.5em;
@@ -102,6 +59,74 @@ a {
 	}
 }
 
+.chat {
+	position:relative;
+	border-bottom:1px solid $borderColor;
+	padding:15px 0;
+	padding-right:15px;
+
+	.avatar {
+		display:inline-block;
+		position:absolute;
+		left:10px;
+		top:18px;
+		
+		img {
+			width:$avatarSize;
+			height:$avatarSize;
+			-webkit-border-radius: $avatarSize;
+			-webkit-transition: all .4s ease-in-out;
+			
+			&:hover {
+				-webkit-transform: scale(1.15);
+			}
+		}
+		
+	}
+	
+	.messages {
+		margin-left:60px;
+		
+		p {
+			padding:0.25em;
+			padding-left:0;
+			margin:0;
+			line-height:135%;
+			color:#4F5562;
+		}
+	}
+	
+	.sender{
+		font-weight:bold;
+		color:$defaultTextColor;
+	}
+	
+	.time {
+		position:absolute;
+		right:15px;
+		font-size:0.8em;
+		color:#6289BE;
+	}
+}
+
+.history {
+	opacity:0.75;
+	transition:opacity 0.4s;
+	
+	&:hover {
+		opacity:1;
+	}
+}
+
+.mention {
+	background:$highlightColor;
+}
+
+.autoreply {
+	p {
+		font-style:italic;
+	}
+}
 
 .status {
 	text-align:center;
@@ -109,6 +134,6 @@ a {
 	padding:0.6em;
 	border-bottom:1px solid #fff;
 	font-size:0.85em;
-	background:$borderColor;
+	background:darken(desaturate($highlightColor, 50%), 3%);
 	padding-right:15px;
 }

@@ -9,51 +9,14 @@ body {
   margin: 0;
   padding-top: 30px;
 }
-a:link {
+body a:link {
   color: #4583fa;
 }
-a:hover {
+body a:hover {
   color: #588ffb;
 }
-a:visited {
+body a:visited {
   color: #075af8;
-}
-.chat {
-  position: relative;
-  border-bottom: 1px solid #f1f2f4;
-  padding: 15px 0;
-  padding-right: 15px;
-}
-.chat .avatar {
-  display: inline-block;
-  position: absolute;
-  left: 10px;
-  top: 18px;
-}
-.chat .avatar img {
-  width: 40px;
-  height: 40px;
-  -webkit-border-radius: 40px;
-}
-.chat .messages {
-  margin-left: 60px;
-}
-.chat .messages p {
-  padding: 0.25em;
-  padding-left: 0;
-  margin: 0;
-  line-height: 135%;
-  color: #4f5562;
-}
-.chat .sender {
-  font-weight: bold;
-  color: #3e444b;
-}
-.chat .time {
-  position: absolute;
-  right: 15px;
-  font-size: 0.8em;
-  color: #6289be;
 }
 .heading,
 .topic {
@@ -83,12 +46,66 @@ a:visited {
   margin: 0;
   padding: 0.2em;
 }
+.chat {
+  position: relative;
+  border-bottom: 1px solid #f1f2f4;
+  padding: 15px 0;
+  padding-right: 15px;
+}
+.chat .avatar {
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 18px;
+}
+.chat .avatar img {
+  width: 40px;
+  height: 40px;
+  -webkit-border-radius: 40px;
+  -webkit-transition: all 0.4s ease-in-out;
+}
+.chat .avatar img:hover {
+  -webkit-transform: scale(1.15);
+}
+.chat .messages {
+  margin-left: 60px;
+}
+.chat .messages p {
+  padding: 0.25em;
+  padding-left: 0;
+  margin: 0;
+  line-height: 135%;
+  color: #4f5562;
+}
+.chat .sender {
+  font-weight: bold;
+  color: #3e444b;
+}
+.chat .time {
+  position: absolute;
+  right: 15px;
+  font-size: 0.8em;
+  color: #6289be;
+}
+.history {
+  opacity: 0.75;
+  transition: opacity 0.4s;
+}
+.history:hover {
+  opacity: 1;
+}
+.mention {
+  background: #eff4fb;
+}
+.autoreply p {
+  font-style: italic;
+}
 .status {
   text-align: center;
   color: #606974;
   padding: 0.6em;
   border-bottom: 1px solid #fff;
   font-size: 0.85em;
-  background: #f1f2f4;
+  background: #e8ecf3;
   padding-right: 15px;
 }
