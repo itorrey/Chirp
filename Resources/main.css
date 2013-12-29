@@ -65,7 +65,7 @@ body a:visited {
   -webkit-transition: all 0.4s ease-in-out;
 }
 .chat .avatar img:hover {
-  -webkit-transform: scale(1.15);
+  -webkit-transform: scale(1.05);
 }
 .chat .messages {
   margin-left: 60px;

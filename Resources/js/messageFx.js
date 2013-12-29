@@ -17,17 +17,18 @@ function initStyle() {
 			var mess = node.getElementsByClassName("messages")[0];
 			
 			mess.style.marginLeft = "50px";
-			mess.style.opacity = "0";
-			avi.style.left = "0px";
+			avi.style.left = "5px";
 			avi.style.opacity = "0";
 			
 			move(mess)
+				.ease('out')
 				.add('margin-left', 10)
 				.set('opacity', 1)
 				.end();
 				
 			move(avi)
-				.add('left', 10)
+				.ease('out')
+				.add('left', 5)
 				.set('opacity', 1)
 				.end();
 		}
