@@ -22,8 +22,7 @@ a:visited {
   position: relative;
   border-bottom: 1px solid #f1f2f4;
   padding: 15px 0;
-  margin-right: 15px;
-  opacity: 0;
+  padding-right: 15px;
 }
 .chat .avatar {
   display: inline-block;
@@ -52,7 +51,7 @@ a:visited {
 }
 .chat .time {
   position: absolute;
-  right: 8px;
+  right: 15px;
   font-size: 0.8em;
   color: #6289be;
 }
@@ -91,5 +90,5 @@ a:visited {
   border-bottom: 1px solid #fff;
   font-size: 0.85em;
   background: #f1f2f4;
-  margin-right: 15px;
+  padding-right: 15px;
 }
