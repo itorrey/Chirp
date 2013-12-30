@@ -20,8 +20,7 @@ function initStyle() {
 			mess.style.opacity = "0.5";
 			avi.style.left = "0";
 			avi.style.opacity = "0.5";
-			
-			
+
 			move(mess)
 				.ease('out')
 				.add('margin-left', 20)
