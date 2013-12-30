@@ -87,13 +87,6 @@ body a:visited {
   font-size: 0.8em;
   color: #6289be;
 }
-.history {
-  opacity: 0.8;
-  transition: opacity 0.4s;
-}
-.history:hover {
-  opacity: 1;
-}
 .mention {
   background: #eff4fb;
 }

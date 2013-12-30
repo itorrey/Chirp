@@ -17,26 +17,23 @@ function initStyle() {
 			var mess = node.getElementsByClassName("messages")[0];
 			
 			mess.style.marginLeft = "40px";
-			mess.style.opacity = "0.5";
 			avi.style.left = "0";
-			avi.style.opacity = "0.5";
 
 			move(mess)
 				.ease('out')
 				.add('margin-left', 20)
-				.set('opacity', 1)
 				.end();
 				
 			move(avi)
 				.duration('0s')
+				.ease('snap')
 				.scale('0.5')
 				.end();
 					
 			move(avi)
 				.duration('0.4s')
-				.ease('out')
+				.ease('in')
 				.add('left', 10)
-				.set('opacity', 1)
 				.scale('1')
 				.end();
 		}
