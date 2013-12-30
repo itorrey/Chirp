@@ -20,6 +20,7 @@ function initStyle() {
 			avi.style.left = "0";
 
 			move(mess)
+				.duration('0.3s')
 				.ease('out')
 				.add('margin-left', 20)
 				.end();
@@ -27,11 +28,11 @@ function initStyle() {
 			move(avi)
 				.duration('0s')
 				.ease('snap')
-				.scale('0.5')
+				.scale('0.75')
 				.end();
 					
 			move(avi)
-				.duration('0.4s')
+				.duration('0.25s')
 				.ease('in')
 				.add('left', 10)
 				.scale('1')

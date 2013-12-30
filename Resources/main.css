@@ -87,6 +87,9 @@ body a:visited {
   font-size: 0.8em;
   color: #6289be;
 }
+.history {
+  background: #f7f8fa;
+}
 .mention {
   background: #eff4fb;
 }
