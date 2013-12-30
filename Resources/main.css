@@ -88,7 +88,7 @@ body a:visited {
   color: #6289be;
 }
 .history {
-  opacity: 0.75;
+  opacity: 0.8;
   transition: opacity 0.4s;
 }
 .history:hover {
