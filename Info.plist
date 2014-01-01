@@ -15,7 +15,7 @@
         <string>Helvetica Neue</string>
 
         <key>DefaultFontSize</key>
-        <integer>13</integer>
+        <integer>14</integer>
 
         <key>CFBundleDevelopmentRegion</key>
         <string>English</string>
@@ -24,7 +24,7 @@
         <string>0.1</string>
 
         <key>CFBundleShortVersionString</key>
-        <string>0.1</string>
+        <string>0.4</string>
 
         <key>DisableCombineConsecutive</key>
         <false/>
