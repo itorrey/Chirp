@@ -113,10 +113,27 @@ body {
 
 .history {
 	background:#F7F8FA;
+	opacity:0.6;
+	transition:opacity 0.5s;
+	&:hover {
+		opacity:1;
+	}
 }
 
 .mention {
 	background:$highlightColor;
+	position:relative;
+	&:after{
+	    content: '';
+	    display: block;
+	    right: 0;
+	    top: 0;
+	    position: absolute;
+		width:20px;
+	    border-bottom: 20px solid transparent;
+	    border-right: 20px solid #F97B1B;
+	}
+	
 }
 
 .autoreply {

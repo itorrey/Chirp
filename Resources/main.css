@@ -90,9 +90,25 @@ body a:visited {
 }
 .history {
   background: #f7f8fa;
+  opacity: 0.6;
+  transition: opacity 0.5s;
+}
+.history:hover {
+  opacity: 1;
 }
 .mention {
   background: #eff4fb;
+  position: relative;
+}
+.mention:after {
+  content: '';
+  display: block;
+  right: 0;
+  top: 0;
+  position: absolute;
+  width: 20px;
+  border-bottom: 20px solid transparent;
+  border-right: 20px solid #f97b1b;
 }
 .autoreply p {
   font-style: italic;
