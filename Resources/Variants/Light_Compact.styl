@@ -1,21 +1,15 @@
-@import "Light"
-
 $avatarSize = 28px;
 
+@import "../css/lightTheme";
+@import "../css/main"
+
 .chat {
-	position:relative;
 	padding:10px 0;
 	padding-right:15px;
 
 	.avatar {
-		position:absolute;
 		left:8px;
 		top:8px;
-		
-		img {
-			width:$avatarSize;
-			height:$avatarSize;
-		}
 	}
 	
 	.messages {
@@ -24,9 +18,7 @@ $avatarSize = 28px;
 		p {
 			padding:0 0.25em;
 			padding-left:0;
-			margin:0;
-			line-height:135%;
-			color:#4F5562;
+			line-height:120%;
 			
 			img {
 				vertical-align:middle;
@@ -35,15 +27,6 @@ $avatarSize = 28px;
 	}
 	
 	.sender{
-		font-weight:bold;
-		color:$defaultTextColor;
 		font-size:88%;
-	}
-	
-	.time {
-		position:absolute;
-		right:15px;
-		font-size:0.8em;
-		color:#6289BE;
 	}
 }

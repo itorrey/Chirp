@@ -26,7 +26,7 @@ body a:visited {
   width: 100%;
   background: #fff;
   z-index: 2;
-  box-shadow: 1px 1px 8px #eef2fb;
+  box-shadow: 1px 1px 8px #eff4fb;
 }
 .heading h1,
 .topic h1 {
@@ -73,7 +73,7 @@ body a:visited {
   padding-left: 0;
   margin: 0;
   line-height: 135%;
-  color: #4f5562;
+  color: #3e444b;
 }
 .chat .messages p img {
   vertical-align: middle;
