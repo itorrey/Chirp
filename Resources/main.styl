@@ -2,7 +2,8 @@ $avatarSize = 40px;
 $defaultTextColor = #3E444B;
 $borderColor = #F1F2F4;
 $linkColor = #4583FA;
-$highlightColor = #EFF4FB;
+$highlightColor = #FBF8EF;
+$focusColor = #EFF4FB;
 
 html {
 	padding:0;
@@ -130,8 +131,12 @@ body {
 	    top: 0;
 	    position: absolute;
 		width:20px;
-	    border-bottom: 20px solid transparent;
-	    border-right: 20px solid #F97B1B;
+	    border-bottom: 12px solid transparent;
+	    border-right: 12px solid #FBBF00;
+	}
+	
+	.time {
+		color:#EEB600;
 	}
 	
 }
@@ -142,7 +147,8 @@ body {
 	}
 }
 
-.status {
+.status,
+.event {
 	text-align:center;
 	color:lighten($defaultTextColor, 20%);
 	padding:0.6em;
@@ -150,4 +156,9 @@ body {
 	font-size:0.85em;
 	background:#F7F8FA;
 	padding-right:15px;
+}
+
+
+.firstFocus {
+	background:$focusColor;
 }

@@ -97,7 +97,7 @@ body a:visited {
   opacity: 1;
 }
 .mention {
-  background: #eff4fb;
+  background: #fbf8ef;
   position: relative;
 }
 .mention:after {
@@ -107,13 +107,17 @@ body a:visited {
   top: 0;
   position: absolute;
   width: 20px;
-  border-bottom: 20px solid transparent;
-  border-right: 20px solid #f97b1b;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid #fbbf00;
+}
+.mention .time {
+  color: #eeb600;
 }
 .autoreply p {
   font-style: italic;
 }
-.status {
+.status,
+.event {
   text-align: center;
   color: #606974;
   padding: 0.6em;
@@ -121,4 +125,7 @@ body a:visited {
   font-size: 0.85em;
   background: #f7f8fa;
   padding-right: 15px;
+}
+.firstFocus {
+  background: #eff4fb;
 }
