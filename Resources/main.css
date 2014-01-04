@@ -127,5 +127,6 @@ body a:visited {
   padding-right: 15px;
 }
 .firstFocus {
+  border-top: 2px solid #5288d4;
   background: #eff4fb;
 }
