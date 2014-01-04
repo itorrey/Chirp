@@ -1,8 +1,5 @@
 // Override CoalescedHTML methods
 function initStyle() {
-	if(null == document.getElementById("heading")){
-		document.getElementsByTagName('body').item(0).style.marginTop = "5px";
-	}
 
 	if(!coalescedHTML) {
 		coalescedHTML = new CoalescedHTML();
@@ -22,11 +19,7 @@ function initStyle() {
 			
 			move(node)
 				.set("-webkit-transform", "perspective( 500px ) rotateY(0)")
-			.end();
-			
-			
-			
+			.end();			
 		}
-		alignChat(coalescedHTML.shouldScroll);
 	});
 }
