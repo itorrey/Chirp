@@ -73,11 +73,11 @@ body {
 		img {
 			width:$avatarSize;
 			height:$avatarSize;
-			-webkit-border-radius: $avatarSize;
-			-webkit-transition: all .4s ease-in-out;
+			border-radius: $avatarSize;
+			transition: all .4s ease-in-out;
 			
 			&:hover {
-				-webkit-transform: scale(1.05);
+				transform: scale(1.05);
 			}
 		}
 		
@@ -109,15 +109,6 @@ body {
 		right:15px;
 		font-size:0.8em;
 		color:#6289BE;
-	}
-}
-
-.history {
-	background:#F7F8FA;
-	opacity:0.6;
-	transition:opacity 0.5s;
-	&:hover {
-		opacity:1;
 	}
 }
 
@@ -159,7 +150,24 @@ body {
 }
 
 
+.focus {
+	background:$focusColor;
+	border-bottom:1px solid #fff;
+}
+
 .firstFocus {
 	border-top:2px solid darken($focusColor, 40%);
 	background:$focusColor;
+		border-bottom:1px solid #fff;
+}
+
+.history {
+	background:#F5F5F5;
+	opacity:0.7;
+	transition:all 0.75s ease-out;
+	
+	&:hover {
+		opacity:1;
+		background:#fff;
+	}
 }
