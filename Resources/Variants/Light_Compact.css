@@ -1,0 +1,179 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  padding-top: 40px;
+}
+body a:link {
+  color: #4583fa;
+}
+body a:hover {
+  color: #588ffb;
+}
+body a:visited {
+  color: #075af8;
+}
+.heading,
+.topic {
+  color: #3e444b;
+  padding: 0.5em;
+  border-bottom: 2px solid #e3e5e9;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #fff;
+  z-index: 2;
+  box-shadow: 1px 1px 8px #eef2fb;
+}
+.heading h1,
+.topic h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.4em;
+  margin: 0;
+  padding: 0;
+}
+.heading h2,
+.topic h2 {
+  text-align: left;
+  font-weight: normal;
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0.2em;
+}
+.chat {
+  position: relative;
+  border-bottom: 1px solid #f1f2f4;
+  padding: 15px 0;
+  padding-right: 15px;
+}
+.chat .avatar {
+  display: inline-block;
+  position: absolute;
+  left: 10px;
+  top: 18px;
+}
+.chat .avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  transition: all 0.4s ease-in-out;
+}
+.chat .avatar img:hover {
+  transform: scale(1.05);
+}
+.chat .messages {
+  margin-left: 60px;
+}
+.chat .messages p {
+  padding: 0.25em;
+  padding-left: 0;
+  margin: 0;
+  line-height: 135%;
+  color: #4f5562;
+}
+.chat .messages p img {
+  vertical-align: middle;
+}
+.chat .sender {
+  font-weight: bold;
+  color: #3e444b;
+}
+.chat .time {
+  position: absolute;
+  right: 15px;
+  font-size: 0.8em;
+  color: #6289be;
+}
+.autoreply p {
+  font-style: italic;
+}
+.status,
+.event {
+  text-align: center;
+  color: #606974;
+  padding: 0.6em;
+  border-bottom: 1px solid #fff;
+  font-size: 0.85em;
+  background: #f7f8fa;
+  padding-right: 15px;
+}
+.focus {
+  background: #eff4fb;
+  border-bottom: 1px solid #fff;
+}
+.firstFocus {
+  border-top: 2px solid #5288d4;
+  background: #eff4fb;
+  border-bottom: 1px solid #fff;
+}
+.history {
+  background: #f5f5f5;
+  opacity: 0.7;
+  transition: all 0.75s ease-out;
+}
+.history:hover {
+  opacity: 0.999;
+  background: #fff;
+}
+.history.mention:hover {
+  background: #fbf8ef;
+}
+.mention {
+  background: #fbf8ef;
+  position: relative;
+}
+.mention:after {
+  content: '';
+  display: block;
+  right: 0;
+  top: 0;
+  position: absolute;
+  width: 20px;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid #fbbf00;
+}
+.mention .time {
+  color: #eeb600;
+}
+.chat {
+  position: relative;
+  padding: 10px 0;
+  padding-right: 15px;
+}
+.chat .avatar {
+  position: absolute;
+  left: 8px;
+  top: 8px;
+}
+.chat .avatar img {
+  width: 28px;
+  height: 28px;
+}
+.chat .messages {
+  margin-left: 44px;
+}
+.chat .messages p {
+  padding: 0 0.25em;
+  padding-left: 0;
+  margin: 0;
+  line-height: 135%;
+  color: #4f5562;
+}
+.chat .messages p img {
+  vertical-align: middle;
+}
+.chat .sender {
+  font-weight: bold;
+  color: #3e444b;
+  font-size: 88%;
+}
+.chat .time {
+  position: absolute;
+  right: 15px;
+  font-size: 0.8em;
+  color: #6289be;
+}
