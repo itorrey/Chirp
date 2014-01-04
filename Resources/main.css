@@ -116,7 +116,7 @@ body a:visited {
   transition: all 0.75s ease-out;
 }
 .history:hover {
-  opacity: 999;
+  opacity: 0.999;
   background: #fff;
 }
 .history.mention:hover {
