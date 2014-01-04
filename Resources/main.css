@@ -88,23 +88,6 @@ body a:visited {
   font-size: 0.8em;
   color: #6289be;
 }
-.mention {
-  background: #fbf8ef;
-  position: relative;
-}
-.mention:after {
-  content: '';
-  display: block;
-  right: 0;
-  top: 0;
-  position: absolute;
-  width: 20px;
-  border-bottom: 12px solid transparent;
-  border-right: 12px solid #fbbf00;
-}
-.mention .time {
-  color: #eeb600;
-}
 .autoreply p {
   font-style: italic;
 }
@@ -135,4 +118,21 @@ body a:visited {
 .history:hover {
   opacity: 999;
   background: #fff;
+}
+.mention {
+  background: #fbf8ef;
+  position: relative;
+}
+.mention:after {
+  content: '';
+  display: block;
+  right: 0;
+  top: 0;
+  position: absolute;
+  width: 20px;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid #fbbf00;
+}
+.mention .time {
+  color: #eeb600;
 }
