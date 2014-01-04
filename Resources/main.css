@@ -119,6 +119,9 @@ body a:visited {
   opacity: 999;
   background: #fff;
 }
+.history.mention:hover {
+  background: #fbf8ef;
+}
 .mention {
   background: #fbf8ef;
   position: relative;
