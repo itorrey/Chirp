@@ -1,3 +1,5 @@
+$avatarSize = 40px;
+
 html {
 	padding:0;
 	margin:0;
@@ -7,6 +9,7 @@ body {
 	padding:0;
 	margin:0;
 	padding-top:40px;
+	background:$defaultBackground;
 	
 	a {
 		&:link {
@@ -26,11 +29,11 @@ body {
 .heading, .topic {
 	color:$defaultTextColor;
 	padding:0.5em;
-	border-bottom:2px solid darken($chatBorderColor, 5%);
+	border-bottom:2px solid $headerBorderColor;
 	position:fixed;
 	top:0;
 	width:100%;
-	background:rgba(255,255,255,1);
+	background:$headerBackground;
 	z-index:2;
 	box-shadow: 1px 1px 8px $headerShadow;
 	
@@ -56,6 +59,7 @@ body {
 	border-bottom:1px solid $chatBorderColor;
 	padding:15px 0;
 	padding-right:15px;
+	background:$chatBackground;
 
 	.avatar {
 		position:absolute;

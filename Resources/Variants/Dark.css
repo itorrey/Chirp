@@ -1,0 +1,142 @@
+html {
+  padding: 0;
+  margin: 0;
+}
+body {
+  padding: 0;
+  margin: 0;
+  padding-top: 40px;
+  background: #333;
+}
+body a:link {
+  color: #4583fa;
+}
+body a:hover {
+  color: #588ffb;
+}
+body a:visited {
+  color: #075af8;
+}
+.heading,
+.topic {
+  color: #fff;
+  padding: 0.5em;
+  border-bottom: 2px solid #000;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background: #111;
+  z-index: 2;
+  box-shadow: 1px 1px 8px #444;
+}
+.heading h1,
+.topic h1 {
+  text-align: center;
+  font-weight: 300;
+  font-size: 1.4em;
+  margin: 0;
+  padding: 0;
+}
+.heading h2,
+.topic h2 {
+  text-align: left;
+  font-weight: normal;
+  font-size: 0.9em;
+  margin: 0;
+  padding: 0.2em;
+}
+.chat {
+  position: relative;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  padding-right: 15px;
+  background: #000;
+}
+.chat .avatar {
+  position: absolute;
+  left: 10px;
+  top: 18px;
+}
+.chat .avatar img {
+  width: 40px;
+  height: 40px;
+  border-radius: 40px;
+  transition: all 0.4s ease-in-out;
+}
+.chat .avatar img:hover {
+  transform: scale(1.05);
+}
+.chat .messages {
+  margin-left: 60px;
+}
+.chat .messages p {
+  padding: 0.25em;
+  padding-left: 0;
+  margin: 0;
+  line-height: 135%;
+  color: #fff;
+}
+.chat .messages p img {
+  vertical-align: middle;
+}
+.chat .sender {
+  font-weight: bold;
+  color: #fff;
+}
+.chat .time {
+  position: absolute;
+  right: 15px;
+  font-size: 0.8em;
+  color: #6289be;
+}
+.autoreply p {
+  font-style: italic;
+}
+.status,
+.event {
+  text-align: center;
+  color: #fff;
+  padding: 0.6em;
+  border-bottom: 1px solid #111;
+  font-size: 0.85em;
+  background: #f7f8fa;
+  padding-right: 15px;
+}
+.focus {
+  background: #e3e3e3;
+  border-bottom: 1px solid #111;
+}
+.firstFocus {
+  border-top: 2px solid #888;
+  background: #e3e3e3;
+  border-bottom: 1px solid #111;
+}
+.history {
+  background: #666;
+  opacity: 0.7;
+  transition: all 0.75s ease-out;
+}
+.history:hover {
+  opacity: 0.999;
+  background: #111;
+}
+.history.mention:hover {
+  background: #999;
+}
+.mention {
+  background: #999;
+  position: relative;
+}
+.mention:after {
+  content: '';
+  display: block;
+  right: 0;
+  top: 0;
+  position: absolute;
+  width: 20px;
+  border-bottom: 12px solid transparent;
+  border-right: 12px solid #777;
+}
+.mention .time {
+  color: #777;
+}
