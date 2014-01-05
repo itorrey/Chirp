@@ -51,7 +51,6 @@ body a:visited {
   padding-right: 15px;
 }
 .chat .avatar {
-  display: inline-block;
   position: absolute;
   left: 10px;
   top: 18px;
