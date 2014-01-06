@@ -6,7 +6,7 @@ body {
   padding: 0;
   margin: 0;
   padding-top: 40px;
-  background: #333;
+  background: #242426;
 }
 body a:link {
   color: #4583fa;
@@ -21,13 +21,13 @@ body a:visited {
 .topic {
   color: #fff;
   padding: 0.5em;
-  border-bottom: 2px solid #000;
+  border-bottom: 2px solid #191d1e;
   position: fixed;
   top: 0;
   width: 100%;
-  background: #111;
+  background: #222526;
   z-index: 2;
-  box-shadow: 1px 1px 8px #444;
+  box-shadow: 1px 1px 8px #333;
 }
 .heading h1,
 .topic h1 {
@@ -47,10 +47,10 @@ body a:visited {
 }
 .chat {
   position: relative;
-  border-bottom: 1px solid #ddd;
+  border-bottom: 1px solid #0a0c0d;
   padding: 15px 0;
   padding-right: 15px;
-  background: #000;
+  background: #191d1e;
 }
 .chat .avatar {
   position: absolute;
@@ -74,20 +74,20 @@ body a:visited {
   padding-left: 0;
   margin: 0;
   line-height: 135%;
-  color: #fff;
+  color: #ababab;
 }
 .chat .messages p img {
   vertical-align: middle;
 }
 .chat .sender {
   font-weight: bold;
-  color: #fff;
+  color: #ababab;
 }
 .chat .time {
   position: absolute;
   right: 15px;
   font-size: 0.8em;
-  color: #6289be;
+  color: #74767b;
 }
 .autoreply p {
   font-style: italic;
@@ -95,36 +95,36 @@ body a:visited {
 .status,
 .event {
   text-align: center;
-  color: #fff;
+  color: #bcbcbc;
   padding: 0.6em;
-  border-bottom: 1px solid #111;
+  border-bottom: 1px solid #222;
   font-size: 0.85em;
-  background: #f7f8fa;
+  background: #3e3f41;
   padding-right: 15px;
 }
 .focus {
-  background: #e3e3e3;
-  border-bottom: 1px solid #111;
+  background: #0e1111;
+  border-bottom: 1px solid #1d1e1e;
 }
 .firstFocus {
-  border-top: 2px solid #888;
-  background: #e3e3e3;
-  border-bottom: 1px solid #111;
+  border-top: 2px solid #213342;
+  background: #0e1111;
+  border-bottom: 1px solid #1d1e1e;
 }
 .history {
-  background: #666;
+  background: #191d1e;
   opacity: 0.7;
   transition: all 0.75s ease-out;
 }
 .history:hover {
   opacity: 0.999;
-  background: #111;
+  background: #3e3f41;
 }
 .history.mention:hover {
-  background: #999;
+  background: #365570;
 }
 .mention {
-  background: #999;
+  background: #365570;
   position: relative;
 }
 .mention:after {
@@ -135,7 +135,7 @@ body a:visited {
   position: absolute;
   width: 20px;
   border-bottom: 12px solid transparent;
-  border-right: 12px solid #777;
+  border-right: 12px solid #5d92c1;
 }
 .mention .time {
   color: #777;

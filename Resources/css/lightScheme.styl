@@ -1,27 +1,33 @@
 $defaultTextColor = #3E444B;
-$defaultBackground = #fff
-
+$defaultBackground = #fff;
 $linkColor = #4583FA;
-$timeColor = #6289BE;
-$highlightColor = #FBF8EF;
 
-$focusColor = #EFF4FB;
-$focusBorderColor = #fff;
+/* Header */
 
+$headerBackground = #fff;
+$headerBorderColor = #F1F2F4;
+$headerTextColor = $defaultTextColor;
+$headerShadow = #EFF4FB;
 
+/* Default Chat */
 $chatBackground = #fff;
 $chatBorderColor = #F1F2F4;
+$timeColor = #6289BE;
 
-$headerShadow = $focusColor;
-$headerBackground = #fff;
-$headerBorderColor = darken($chatBorderColor, 5%);
+/* Chats that happened since adium focus was lost */
+$focusBackground = #EFF4FB;
+$focusBorderColor = #fff;
+$firstFocusBorderColor = darken($focusBackground, 20%);
 
-
+/* Events like someone signing on/off */
 $eventBackground = #F7F8FA;
 $eventBorderColor = #fff;
 
+/* Items from a previous chat */
 $historyBackground = #F5F5F5;
 $historyBackgroundHover = #fff;
 
+/* Mentions */
+$mentionBackground = #FBF8EF;
 $mentionTagColor = #FBBF00;
 $mentionTimeColor = #EEB600;

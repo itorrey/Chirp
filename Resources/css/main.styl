@@ -27,7 +27,7 @@ body {
 }
 
 .heading, .topic {
-	color:$defaultTextColor;
+	color:$headerTextColor;
 	padding:0.5em;
 	border-bottom:2px solid $headerBorderColor;
 	position:fixed;
@@ -127,13 +127,13 @@ body {
 }
 
 .focus {
-	background:$focusColor;
+	background:$focusBackground;
 	border-bottom:1px solid $focusBorderColor;
 }
 
 .firstFocus {
-	border-top:2px solid darken($focusColor, 40%);
-	background:$focusColor;
+	border-top:2px solid $firstFocusBorderColor;
+	background:$focusBackground;
 	border-bottom:1px solid $focusBorderColor;
 }
 
@@ -148,12 +148,12 @@ body {
 	}
 	
 	&.mention:hover {
-		background:$highlightColor;
+		background:$mentionBackground;
 	}
 }
 
 .mention {
-	background:$highlightColor;
+	background:$mentionBackground;
 	position:relative;
 	&:after{
 	    content: '';

@@ -1,0 +1,26 @@
+.chat {
+  padding: 10px 0;
+  padding-right: 15px;
+}
+.chat .avatar {
+  left: 8px;
+  top: 8px;
+}
+.chat .avatar img {
+  width: 28px;
+  height: 28px;
+}
+.chat .messages {
+  margin-left: 44px;
+}
+.chat .messages p {
+  padding: 0 0.25em;
+  padding-left: 0;
+  line-height: 120%;
+}
+.chat .messages p img {
+  vertical-align: middle;
+}
+.chat .sender {
+  font-size: 88%;
+}
