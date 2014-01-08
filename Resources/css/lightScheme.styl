@@ -1,9 +1,8 @@
-$defaultTextColor = #3E444B;
 $defaultBackground = #fff;
+$defaultTextColor = #3E444B;
 $linkColor = #4583FA;
 
 /* Header */
-
 $headerBackground = #fff;
 $headerBorderColor = #F1F2F4;
 $headerTextColor = $defaultTextColor;
@@ -18,6 +17,8 @@ $timeColor = #6289BE;
 $focusBackground = #EFF4FB;
 $focusBorderColor = #fff;
 $firstFocusBorderColor = darken($focusBackground, 20%);
+$firstFocusBorderTop = 2px solid $firstFocusBorderColor;
+$focusTimeColor = $timeColor
 
 /* Events like someone signing on/off */
 $eventBackground = #F7F8FA;
@@ -26,8 +27,10 @@ $eventBorderColor = #fff;
 /* Items from a previous chat */
 $historyBackground = #F5F5F5;
 $historyBackgroundHover = #fff;
+$historyOpacity = 0.7;
 
 /* Mentions */
 $mentionBackground = #FBF8EF;
 $mentionTagColor = #FBBF00;
 $mentionTimeColor = #EEB600;
+$mentionFontColor = $defaultTextColor;

@@ -124,22 +124,33 @@ body {
 	font-size:0.85em;
 	background:$eventBackground;
 	padding-right:15px;
+	font-style:italic;
 }
 
 .focus {
 	background:$focusBackground;
 	border-bottom:1px solid $focusBorderColor;
+	border-right:$focusBorderLeft;
+	
+	.time {
+		color: $focusTimeColor;
+	}
 }
 
 .firstFocus {
-	border-top:2px solid $firstFocusBorderColor;
+	border-top:$firstFocusBorderTop;
 	background:$focusBackground;
 	border-bottom:1px solid $focusBorderColor;
+	border-right:$focusBorderLeft;
+	
+	.time {
+		color: $focusTimeColor;
+	}
 }
 
 .history {
 	background:$historyBackground;
-	opacity:0.7;
+	opacity:$historyOpacity;
 	transition:all 0.75s ease-out;
 	
 	&:hover {
@@ -168,6 +179,10 @@ body {
 	
 	.time {
 		color:$mentionTimeColor;
+	}
+	
+	.messages p {
+		color:$mentionFontColor;
 	}
 	
 }

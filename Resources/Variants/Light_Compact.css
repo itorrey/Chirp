@@ -101,15 +101,24 @@ body a:visited {
   font-size: 0.85em;
   background: #f7f8fa;
   padding-right: 15px;
+  font-style: italic;
 }
 .focus {
   background: #eff4fb;
   border-bottom: 1px solid #fff;
+  border-right: $focusBorderLeft;
+}
+.focus .time {
+  color: #6289be;
 }
 .firstFocus {
   border-top: 2px solid #a1bee7;
   background: #eff4fb;
   border-bottom: 1px solid #fff;
+  border-right: $focusBorderLeft;
+}
+.firstFocus .time {
+  color: #6289be;
 }
 .history {
   background: #f5f5f5;
@@ -139,6 +148,9 @@ body a:visited {
 }
 .mention .time {
   color: #eeb600;
+}
+.mention .messages p {
+  color: #3e444b;
 }
 .chat {
   padding: 10px 0;

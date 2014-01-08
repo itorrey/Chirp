@@ -6,16 +6,16 @@ body {
   padding: 0;
   margin: 0;
   padding-top: 40px;
-  background: #242426;
+  background: #0d0f0f;
 }
 body a:link {
-  color: #4583fa;
+  color: #43aae0;
 }
 body a:hover {
-  color: #588ffb;
+  color: #56b3e3;
 }
 body a:visited {
-  color: #075af8;
+  color: #218ec8;
 }
 .heading,
 .topic {
@@ -47,10 +47,10 @@ body a:visited {
 }
 .chat {
   position: relative;
-  border-bottom: 1px solid #0a0c0d;
+  border-bottom: 1px solid #000;
   padding: 15px 0;
   padding-right: 15px;
-  background: #191d1e;
+  background: #1c2122;
 }
 .chat .avatar {
   position: absolute;
@@ -74,20 +74,20 @@ body a:visited {
   padding-left: 0;
   margin: 0;
   line-height: 135%;
-  color: #ababab;
+  color: #b5b5b5;
 }
 .chat .messages p img {
   vertical-align: middle;
 }
 .chat .sender {
   font-weight: bold;
-  color: #ababab;
+  color: #b5b5b5;
 }
 .chat .time {
   position: absolute;
   right: 15px;
   font-size: 0.8em;
-  color: #74767b;
+  color: #4e4f54;
 }
 .autoreply p {
   font-style: italic;
@@ -95,36 +95,45 @@ body a:visited {
 .status,
 .event {
   text-align: center;
-  color: #bcbcbc;
+  color: #c4c4c4;
   padding: 0.6em;
-  border-bottom: 1px solid #222;
+  border-bottom: 1px solid #111;
   font-size: 0.85em;
-  background: #3e3f41;
+  background: #1d2122;
   padding-right: 15px;
+  font-style: italic;
 }
 .focus {
-  background: #0e1111;
+  background: #1a2834;
   border-bottom: 1px solid #1d1e1e;
+  border-right: $focusBorderLeft;
+}
+.focus .time {
+  color: #34557f;
 }
 .firstFocus {
-  border-top: 2px solid #213342;
-  background: #0e1111;
+  border-top: 4px solid #2c4458;
+  background: #1a2834;
   border-bottom: 1px solid #1d1e1e;
+  border-right: $focusBorderLeft;
+}
+.firstFocus .time {
+  color: #34557f;
 }
 .history {
-  background: #191d1e;
+  background: #1c2122;
   opacity: 0.7;
   transition: all 0.75s ease-out;
 }
 .history:hover {
   opacity: 0.999;
-  background: #3e3f41;
+  background: #191d1e;
 }
 .history.mention:hover {
-  background: #365570;
+  background: #2d6594;
 }
 .mention {
-  background: #365570;
+  background: #2d6594;
   position: relative;
 }
 .mention:after {
@@ -135,10 +144,13 @@ body a:visited {
   position: absolute;
   width: 20px;
   border-bottom: 12px solid transparent;
-  border-right: 12px solid #5d92c1;
+  border-right: 12px solid #4398de;
 }
 .mention .time {
-  color: #777;
+  color: #184368;
+}
+.mention .messages p {
+  color: #cecece;
 }
 .chat {
   padding: 10px 0;
