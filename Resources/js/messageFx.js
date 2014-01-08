@@ -13,13 +13,10 @@ function initStyle() {
 			
 			move(node)
 				.set("-webkit-transform", "perspective( 500px ) rotateY(15deg)")
-			.end();
-				
-				
-			
-			move(node)
+				.end()
+				.then()
 				.set("-webkit-transform", "perspective( 500px ) rotateY(0)")
-			.end();			
+				.end();
 		}
 	});
 }
