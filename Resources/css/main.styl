@@ -64,13 +64,14 @@ body {
 	.avatar {
 		position:absolute;
 		left:10px;
-		top:18px;
+		top:16px;
 		
 		img {
 			width:$avatarSize;
 			height:$avatarSize;
 			border-radius: $avatarSize;
 			transition: all .4s ease-in-out;
+			border:$avatarBorder;
 			
 			&:hover {
 				transform: scale(1.05);
@@ -183,6 +184,10 @@ body {
 	
 	.messages p {
 		color:$mentionFontColor;
+	}
+	
+	.avatar img {
+		border:$avatarMentionBorder;
 	}
 	
 }
