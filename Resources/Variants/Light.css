@@ -48,6 +48,7 @@ body a:visited {
 .chat {
   position: relative;
   border-bottom: 1px solid #f1f2f4;
+  border-top: 1px solid #fff;
   padding: 15px 0;
   padding-right: 15px;
   background: #fff;
@@ -56,16 +57,13 @@ body a:visited {
   position: absolute;
   left: 10px;
   top: 16px;
+  transition: all 0.4s ease-in-out;
 }
 .chat .avatar img {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  transition: all 0.4s ease-in-out;
   border: none;
-}
-.chat .avatar img:hover {
-  transform: scale(1.05);
 }
 .chat .messages {
   margin-left: 60px;
@@ -98,7 +96,8 @@ body a:visited {
   text-align: center;
   color: #606974;
   padding: 0.6em;
-  border-bottom: 1px solid #fff;
+  border-bottom: 1px solid $eventBorderColorBottom;
+  border-top: 1px solid #fff;
   font-size: 0.85em;
   background: #f7f8fa;
   padding-right: 15px;
@@ -107,7 +106,6 @@ body a:visited {
 .focus {
   background: #eff4fb;
   border-bottom: 1px solid #fff;
-  border-right: $focusBorderLeft;
 }
 .focus .time {
   color: #6289be;
@@ -116,7 +114,6 @@ body a:visited {
   border-top: 2px solid #a1bee7;
   background: #eff4fb;
   border-bottom: 1px solid #fff;
-  border-right: $focusBorderLeft;
 }
 .firstFocus .time {
   color: #6289be;

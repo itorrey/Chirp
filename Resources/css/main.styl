@@ -56,7 +56,8 @@ body {
 
 .chat {
 	position:relative;
-	border-bottom:1px solid $chatBorderColor;
+	border-bottom:1px solid $chatBorderColorBottom;
+	border-top:1px solid $chatBorderColorTop;
 	padding:15px 0;
 	padding-right:15px;
 	background:$chatBackground;
@@ -65,19 +66,14 @@ body {
 		position:absolute;
 		left:10px;
 		top:16px;
+		transition: all .4s ease-in-out;
 		
 		img {
 			width:$avatarSize;
 			height:$avatarSize;
 			border-radius: $avatarSize;
-			transition: all .4s ease-in-out;
 			border:$avatarBorder;
-			
-			&:hover {
-				transform: scale(1.05);
-			}
 		}
-		
 	}
 	
 	.messages {
@@ -119,9 +115,10 @@ body {
 .status,
 .event {
 	text-align:center;
-	color:lighten($defaultTextColor, 20%);
+	color:$eventTextColor;
 	padding:0.6em;
-	border-bottom:1px solid $eventBorderColor;
+	border-bottom:1px solid $eventBorderColorBottom;
+	border-top:1px solid $chatBorderColorTop;
 	font-size:0.85em;
 	background:$eventBackground;
 	padding-right:15px;
@@ -131,7 +128,6 @@ body {
 .focus {
 	background:$focusBackground;
 	border-bottom:1px solid $focusBorderColor;
-	border-right:$focusBorderLeft;
 	
 	.time {
 		color: $focusTimeColor;
@@ -142,7 +138,6 @@ body {
 	border-top:$firstFocusBorderTop;
 	background:$focusBackground;
 	border-bottom:1px solid $focusBorderColor;
-	border-right:$focusBorderLeft;
 	
 	.time {
 		color: $focusTimeColor;
@@ -153,7 +148,6 @@ body {
 	background:$historyBackground;
 	opacity:$historyOpacity;
 	transition:all 0.75s ease-out;
-	
 	&:hover {
 		opacity:.999;
 		background:$historyBackgroundHover;
