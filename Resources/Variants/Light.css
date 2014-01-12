@@ -12,7 +12,7 @@ body a:link {
   color: #4583fa;
 }
 body a:hover {
-  color: #588ffb;
+  color: #7da8fc;
 }
 body a:visited {
   color: #075af8;
@@ -55,15 +55,15 @@ body a:visited {
 }
 .chat .avatar {
   position: absolute;
-  left: 10px;
-  top: 16px;
+  left: 8px;
+  top: 14px;
   transition: all 0.4s ease-in-out;
 }
 .chat .avatar img {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  border: none;
+  border: 2px solid #e5e6e8;
 }
 .chat .messages {
   margin-left: 60px;
@@ -151,5 +151,5 @@ body a:visited {
   color: #3e444b;
 }
 .mention .avatar img {
-  border: none;
+  border: 2px solid #e5e6e8;
 }

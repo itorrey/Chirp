@@ -12,7 +12,7 @@ body a:link {
   color: #43aae0;
 }
 body a:hover {
-  color: #56b3e3;
+  color: #7bc3e9;
 }
 body a:visited {
   color: #218ec8;
@@ -55,15 +55,15 @@ body a:visited {
 }
 .chat .avatar {
   position: absolute;
-  left: 10px;
-  top: 16px;
+  left: 8px;
+  top: 14px;
   transition: all 0.4s ease-in-out;
 }
 .chat .avatar img {
   width: 40px;
   height: 40px;
   border-radius: 40px;
-  border: 2px solid #0a0b0b;
+  border: 2px solid #194054;
 }
 .chat .messages {
   margin-left: 60px;
@@ -111,7 +111,7 @@ body a:visited {
   color: #34557f;
 }
 .firstFocus {
-  border-top: 4px solid #2c4458;
+  border-top: 4px solid #3f5669;
   background: #1a2834;
   border-bottom: 1px solid #1d1e1e;
 }
@@ -158,7 +158,7 @@ body a:visited {
   padding-right: 15px;
 }
 .chat .avatar {
-  left: 8px;
+  left: 6px;
   top: 8px;
 }
 .chat .avatar img {
