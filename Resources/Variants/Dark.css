@@ -78,6 +78,10 @@ body a:visited {
 .chat .messages p img {
   vertical-align: middle;
 }
+.chat .messages .next {
+  padding: 0.35em 0 0.25em 0 !important;
+  margin: 0.3em 0;
+}
 .chat .sender {
   font-weight: bold;
   color: #b5b5b5;
