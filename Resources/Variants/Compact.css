@@ -1,0 +1,13 @@
+@import "../main.css";
+
+.chat {
+  min-height: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+}
+.chat .avatar {
+  top: 5px;
+}
+.chat .messages p {
+  line-height: 125%;
+}
